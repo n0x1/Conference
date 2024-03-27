@@ -1,0 +1,13 @@
+.subjects {
+    text-align:center;
+    font-size:2em;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.button-container {
+    display:flex;
+    flex-direction:row;
+    justify-content: safe center;
+    align-items: center;
+}

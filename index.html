@@ -1,28 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Links to css and js --> 
-<link rel="stylesheet" type="text/css" href="index.css" />
+<!-- Links to css, animation library, and js library things REMEMBER TO PUT ../ BEFORE CSS STYLE BC ITS IN PARENT FOLDER --> 
+<link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+<!-- jquery -->
+<head> <!-- Animation snippet-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".e1").fadeIn(200);
+        $(".e2").fadeIn(400);
+        $(".e3").fadeIn(600);
+        $(".e4").fadeIn(800);
+        $(".e5").fadeIn(1000);
+      });
+    </script>
+</head>
+
+<!--  above code should go on every page I think -->
 
 <!-- Meta stuff -->
 <meta charset="utf-8">
 <meta content="Conference" property="og:title" />
-<meta content="Where Education Meets Convenience. Connect and Learn Easily" property="og:description" />
-<meta content="SHEETS URL HERE" property="og:url" />
-<meta content="URL OF LOGO" property="og:image" />
+<meta content="Where Education Meets Convenience. " property="og:description" />
+<meta content="Github sheets url here" property="og:url" />
+<meta content="Logo path" property="og:image" />
 <meta content="#ed6053" data-react-helmet="true" name="theme-color" />
 
 
-<!--  -->
-<div class="topnav">
-    <a class="active" href="#home">Conference logo</a>
-    <a href="#calendar">Calendar</a>
-    <a href="#communicate">Communicate</a>
-    <a href="#Account">Account</a>
+
+<title>
+    Conference: Where Education Meets Convenience
+</title>
+<h1>
+    Conference
+</h1>
+
+<!-- subject selection (e1 = element 1 so animations work universally)-->
+<div class="subjects">
+    <a style="display:none;text-decoration:none;" id="bio" class="e1" href="subjects/biology.html">Biology</a>
+    <a style="display:none;text-decoration:none;" id="phy" class="e2" href="subjects/physics.html">Physics</a>
+    <a style="display:none;text-decoration:none;" id="chm" class="e3" href="subjects/chemistry.html">Chemistry</a>
+    <a style="display:none;text-decoration:none;" id="mth" class="e4" href="subjects/math.html">Math</a>
+    <a style="display:none;text-decoration:none;" id="lng" class="e5" href="subjects/language.html">Language</a>
   </div>
 
 
+<!--*** design questions for thurs meeting
+    Align horizontal or vertical?
+    Home page? (user would click in then see all the subjects)
+
+    do i need favicon on each page?
+-->
 
   
+
+
+
+
+
+<!-- other idea of dropdowns but i like having seperate pages more
+
+<div class="chemdropdown">
+  <label for="subjects">Choose your desired subject:</label>
+  <select name="subject" id="subjectlist">
+  <option value="bio">Biology</option>
+  <option value="phy">Physics</option>
+  <option value="chm">Chemistry</option>
+  <option value="mth">Math</option>
+  <option value="lng">World Languages</option>
+</select>
+
+<div class="bio_options">
+    <label for="biology classes">Choose the class you are taking:</label>
+    <select name="Biology Classes" id="biolist">
+    <option value="bio100">Biology 100</option>
+    <option value="bio500">Biology 5xx</option>
+</div>
+<div class="phy_options">
+    <label for="physics classes">Choose the physics class you are taking:</label>
+    <select name="bioclasses" id="phylist">
+    <option value="phy100">Physics 100</option>
+    <option value="bio500">Physics 551</option>
+    <option value="bio500">Physics 553</option>
+</div>
+<div class="chm_options">
+    <label for="chemistry classes">Choose the chemistry class you are taking:</label>
+    <select name="chmclasses" id="chmlist">
+    <option value="chm300">Chemistry 300</option>
+    <option value="bio500">Chemistry 550</option>
+    <option value="bio500">Chemistry 580</option>
+</div>
+<div class="mth_options">
+    <label for="math classes">Choose the math class you are taking:</label>
+    <select name="Math Classes" id="mthlist">
+    <option value="mth225">Math 225</option>
+    <option value="mth275">Math 275</option>
+    <option value="mth320to340">Math 320-340</option>
+</div>
+!!-->
+
+
+</html>
