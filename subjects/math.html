@@ -7,6 +7,7 @@
 <head> <!-- Animation snippet-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../scripts.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <script>
     $(document).ready(function(){
         $(".e1").fadeIn(200);
@@ -30,19 +31,31 @@
 </div>
 <!--  above code should go on every page I think -->
 
-<h5 class="e1"> Please select your class: </h5>
-<div class="container" style= "text-align:center;"> 
-    <a style="display:none;;" class="e1">MTH225</a>
-                                                            <!-- does it make sense to have subject areas rather than numbers for math? so many diff accelerated and specific classes etc hard to include specifics-->
-    <a style="display:none;;" class="e2">MTH275/280</a>
-    
-    <a style="display:none" class="e3">MTH320-340</a> <!-- possibly make category more specific depending on demand for higher lvl tutoring-->
+<h5 class="e1"> Browse all math tutors </h5>
 
-    <a style="display:none;;" class="e4">MTH350-60</a>
-
-    <a style="display:none;;" class="e5">MTH380</a>
-
-
-
-
+<button type="button" class="collapsible">Cam Manzo: CHM250, 300</button><!--Testing my own link, ideally subjects are as seperate tags and not in the student text-->
+<div class="content">
+  <!-- Calendly link widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <p><b>Bio:</b> I have taken Chemistry and have thorough understanding of the content for 250 and 300. <br> <b>Learning style:</b> Techniques such as the Feynman method, active recall; big picture thinker. <br> <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/camtmanzo?hide_gdpr_banner=1&primary_color=4baee5'});return false;">Schedule with Cam Manzo.</a></p>
+  <!-- Calendly link widget end -->
 </div>
+
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
