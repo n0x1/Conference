@@ -31,6 +31,7 @@
 <!--  above code should go on every page I think -->
 
 
+
 <h5 class="e1"> Browse all Chemistry tutors: </h5>
 
 
@@ -42,3 +43,21 @@
   <p><a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/camtmanzo?hide_gdpr_banner=1&primary_color=4baee5'});return false;">[Tutor name]: CHM 250, 300</a></p>
   <!-- Calendly link widget end -->
 </div>
+
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+  </script>
