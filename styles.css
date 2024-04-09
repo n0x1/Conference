@@ -1,0 +1,76 @@
+#bio, #phy, #chm, #mth, #lng, .container > a {
+    display:inline-block;
+
+    background: rgba(68, 68, 65, 0.5); /* set a dark grey color with 50% opacity */
+    text-align: center;
+    color: #f8f0e2;
+    transition: background-color 0.45s ease, color 0.45s ease; 
+    font-size:2em;
+    border-radius: 25px;
+    text-align:center;
+    padding: 10px;
+    margin:10px 7px 10px 7px;
+
+}
+
+#bio:hover, #phy:hover, #chm:hover, #mth:hover, #lng:hover, .container > a:hover {
+    background: rgba(248, 240, 226, .5); /* change background color to transparent beige on hover */
+    color: #444441 !important; /* change text color to #444441 on hover */
+
+}
+
+.subjects div a h2:hover() {
+
+    color:#111112
+
+}
+
+.header {
+    box-shadow: rgba(0, 0, 0, 0.075) 0 1px;
+    height: 60px;
+    width: 100%;
+    transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+    position: relative
+
+    
+}
+.header > a { 
+    color:#FF4E4E !important;
+}
+
+h5 {
+    font-size:2em;
+    text-align: center;
+    margin: 0.5rem 0 0 0
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+/* "the site is meant to be minimalist and accessible" (presentation answer) */ 
+
+

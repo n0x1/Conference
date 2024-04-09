@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Links to css, animation library, and js library things REMEMBER TO PUT ../ BEFORE CSS STYLE BC ITS IN PARENT FOLDER --> 
+
+<!-- jquery -->
+<head> <!-- Animation snippet-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".e1").fadeIn(200);
+        $(".e2").fadeIn(400);
+        $(".e3").fadeIn(600);
+        $(".e4").fadeIn(800);
+        $(".e5").fadeIn(1000);
+        $(".e6").fadeIn(1200);
+        $(".e7").fadeIn(1400);
+        $(".e8").fadeIn(1600);
+      });
+    </script>
+
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div class="header">
+        <a style="text-decoration: none;color: #FF4E4E; font-size:1.5em;" href="../index.html"> <h1>Conference</h1> </a>
+</div>
+<!--  above code should go on every page I think -->
+
+<h5 class="e1"> Please select your class: </h5>
+<div class="container" style= "text-align:center;"> 
+    <a style="display:none;;" class="e1">MTH225</a>
+                                                            <!-- does it make sense to have subject areas rather than numbers for math? so many diff accelerated and specific classes etc hard to include specifics-->
+    <a style="display:none;;" class="e2">MTH275/280</a>
+    
+    <a style="display:none" class="e3">MTH320-340</a> <!-- possibly make category more specific depending on demand for higher lvl tutoring-->
+
+    <a style="display:none;;" class="e4">MTH350-60</a>
+
+    <a style="display:none;;" class="e5">MTH380</a>
+
+
+
+
+</div>

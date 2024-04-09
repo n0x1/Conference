@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Links to css, animation library, and js library things REMEMBER TO PUT ../ BEFORE CSS STYLE BC ITS IN PARENT FOLDER --> 
+
+<!-- jquery -->
+<head> <!-- Animation snippet-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".e1").fadeIn(200);
+        $(".e2").fadeIn(400);
+        $(".e3").fadeIn(600);
+        $(".e4").fadeIn(800);
+        $(".e5").fadeIn(1000);
+        $(".e6").fadeIn(1200);
+        $(".e7").fadeIn(1400);
+        $(".e8").fadeIn(1600);
+      });
+    </script>
+
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div class="header">
+        <a style="text-decoration: none;color: #FF4E4E; font-size:1.5em;" href="../index.html"> <h1>Conference</h1> </a>
+</div>
+<!--  above code should go on every page I think -->
+
+<h5 class="e1"> Please select your class: </h5>
+<div class="container" style= "text-align:center;"> 
+    <a style="display:none;;" class="e1">Physics 100</a>
+                                                            <!-- design question 2: use abbreviation or full thing?-->
+    <a style="display:none;;" class="e2">PHY300</a>
+    
+    <a style="display:none" class="e3">Physics 400</a> <!-- possibly make category more specific depending on demand for higher lvl tutoring-->
+
+<br>
+    <a style="display:none;;" class="e4">Astronomy (PHY440)</a>
+
+    <a style="display:none;;" class="e5">PHY551-2</a>
+
+    <a style="display:none;;" class="e6">PHY553-4</a>
+
+
+
+</div>
