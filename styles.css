@@ -6,7 +6,8 @@ body {
 }
 
 
-
+@media screen and (min-device-width:479px) {
+    
 #bio, #phy, #chm, #mth, #lng, .container > a {
     display:inline-block;
 
@@ -21,6 +22,23 @@ body {
     margin:10px 7px 10px 7px;
 
 }
+}
+
+@media screen and (max-device-width:479px) {
+    #bio, #phy, #chm, #mth, #lng, .container > a {
+    display:flex;
+    flex-direction:column;
+    background-color: rgba(68, 68, 65, 0.2); /* set a dark grey color with 20% opacity */
+    text-align: center;
+    color: grey;
+    transition: background-color 0.35s ease, color 0.35s ease; 
+    font-size:2em;
+    border-radius: 25px;
+    text-align:center;
+    padding: 10px;
+    margin:10px 7px 10px 7px;
+    }
+}
 
 #bio:hover, #phy:hover, #chm:hover, #mth:hover, #lng:hover, .container > a:hover {
     background: rgba(68, 68, 65, 0.5); /* change background to 50% opacity on hover */
@@ -33,6 +51,7 @@ body {
     color:#111112
 
 }
+
 
 .collapsible {
     background-color: rgba(68, 68, 65, 0.2);
