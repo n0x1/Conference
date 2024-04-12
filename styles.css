@@ -89,14 +89,14 @@ body {
     box-shadow: rgba(0, 0, 0, 0.075) 0 1.2px;
     height: 60px;
     width: 100%;
-    transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
     position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
     top:0;
     left:0;
-    
+    color: #FF4E4E; 
+    font-size:3rem;
 }
 .header > a { 
     color:#FF4E4E !important;
