@@ -31,14 +31,15 @@
 </div>
 <!--  above code should go on every page I think -->
 
-<h5 class="e1"> Browse all math tutors </h5>
+<h5 class="e1"> Browse all <span style="color:#c41f3e">math</span> tutors </h5>
 
-<button type="button" class="collapsible">Cam Manzo: MTH225-340</button><!--Testing my own link, ideally subjects are as seperate tags and not in the student text-->
+<button type="button" class="collapsible">Cam Manzo: Math 225-340 (geometry & precalculus sequence)</button><!--Testing my own link, ideally subjects are as seperate tags and not in the student text-->
 <div class="content">
   <!-- Calendly link widget begin -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <p>I have taken Algebra, Geometry and Precalculus and continue to enjoy studying math! I also enjoy computer science and music. I have a dog as well. <br> <b>I am strong in applicational and theoretical math fields. </b> <br> <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/camtmanzo?hide_gdpr_banner=1&primary_color=4baee5'});return false;">Schedule with Cam Manzo.</a></p>
+  <img class ="profile-picture" src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg">
+  <p>I enjoy helping students understand mathematics. <br> <b>I am strong in applicational and theoretical math fields. </b> <br> <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/camtmanzo?hide_gdpr_banner=1&primary_color=4baee5'});return false;">Schedule with Cam Manzo.</a></p>
   <!-- Calendly link widget end -->
 </div>
 
@@ -55,6 +56,23 @@
         content.style.display = "none";
       } else {
         content.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+  
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
       }
     });
   }

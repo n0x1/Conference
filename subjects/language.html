@@ -31,13 +31,73 @@
 </div>
 <!--  above code should go on every page I think -->
 
+
+<h5 class="e1"> Browse all <span style="color:darkgoldenrod">language</span> tutors </h5>
+
+
+<button type="button" class="collapsible">Cam Manzo: Japanese</button><!--Testing my own link, ideally subjects are as seperate tags and not in the student text-->
+<div class="content">
+  <!-- Calendly link widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <img class ="profile-picture" src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg">
+  <p>I enjoy reading Japanese literature. I also enjoy computer science and music. I have a dog as well. <br> Teaching with techniques such as learning systems, incorporating spaced repetition flashcards and Heisig's RTK. <br> <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/camtmanzo?hide_gdpr_banner=1&primary_color=4baee5'});return false;">Schedule with Cam Manzo.</a></p>
+  <!-- Calendly link widget end -->
+</div>
+
+<button type="button" class="collapsible">Polyglot X: Spanish, French, German</button>
+<div class="content">
+  <!-- Calendly link widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <img class ="profile-picture" src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg">
+  <p>I can speak many languages c nulla egestas, ullamcorper risus non luctus urna, mollis vestibulum justo. Sed non est maximus, fringilla ligula ut, tempor libero. Donec lacinia, mauris id finibus pharetra, orci nunc porttitor dolor, ac venenatis arcu mi quis est.<br>Phasellus faucibus lorem ipsum, nec mollis tellus bibendum sed. <br> <a href="" onclick="Calendly.initPopupWidget({url: 'Xpersonlinkcalendly'});return false;">Schedule with Person.</a></p>
+  <!-- Calendly link widget end -->
+</div>
+
+
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+  </script>
+
+
+
+<!--specific languages 
 <h5 class="e1"> Please select your language: </h5>
 <div class="container" style= "text-align:center;"> 
     <a style="display:none;;" class="e1">Spanish</a>
-                                                    <!-- design question 2: use abbreviation or full thing?-->
+                                                  
     <a style="display:none;;" class="e2">French</a>
     
-    <a style="display:none;" class="e3">German</a> <!-- possibly make category more specific depending on demand for higher lvl tutoring-->
+    <a style="display:none;" class="e3">German</a> 
 
     <a style="display:none;" class="e4">Russian</a>
 <br>
@@ -52,3 +112,5 @@
 
 
 </div>
+-->
+

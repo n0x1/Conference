@@ -31,21 +31,50 @@
 </div>
 <!--  above code should go on every page I think -->
 
-<h5 class="e1"> Please select your class: </h5>
-<div class="container" style= "text-align:center;"> 
-    <a style="display:none;;" class="e1">Physics 100</a>
-                                                            <!-- design question 2: use abbreviation or full thing?-->
-    <a style="display:none;;" class="e2">PHY300</a>
-    
-    <a style="display:none" class="e3">Physics 400</a> <!-- possibly make category more specific depending on demand for higher lvl tutoring-->
 
-<br>
-    <a style="display:none;;" class="e4">Astronomy (PHY440)</a>
+<h5 class="e1"> Browse all <span style="color:purple;">physics</span> tutors </h5>
 
-    <a style="display:none;;" class="e5">PHY551-2</a>
-
-    <a style="display:none;;" class="e6">PHY553-4</a>
-
-
-
+<button type="button" class="collapsible">Enthusiastic physicist: PHY55X</button>
+<div class="content">
+  <!-- Calendly link widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <img class ="profile-picture" src="https://i.natgeofe.com/n/34861553-e7b4-441d-af1f-3f91b21b1755/01-einstein-other-inventions_square.jpg">
+  <p>I tutor physics.<br>I enjoy working with struggling students and giving them the support they need. <br> <a href="" onclick="Calendly.initPopupWidget({url: 'Xpersonlinkcalendly'});return false;">Schedule with Physics Tutor.</a></p>
+  <!-- Calendly link widget end -->
 </div>
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+  
+    
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
